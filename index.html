@@ -1,0 +1,56 @@
+<!-- Halloween by Innovative Design -->
+<!-- Compiled by Julia Sun (http://juliasun.io/) -->
+<html id="ng-app" data-ng-app="halloween">
+  <head>
+    <title>Halloween by Innovative Design</title>
+    <meta name="viewport" content="initial-scale=1">
+    <meta property="og:title" content="Halloween by Innovative Design">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://halloween.innovativedesign.club">
+    <meta property="og:image" content="http://halloween.innovativedesign.club/img/logo/logo.png">
+    <meta property="og:description" content="Halloween cards made by the talented people in Innovative Design. Drop by our table to pick one up!">
+
+    <link rel="icon" type="image/png" href="img/logo/logo.png">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+  </head>
+  <body id="content" ng-controller="MainCtrl">
+    <div class="page-container">
+      <div class="title">Halloween by Innovative Design</div>
+      <div class="about">
+        Every October, <a href="http://innovativedesign.club" target="_blank">Innovative Design</a> designs and distributes Halloween cards on Sproul for free!  Here are some examples of cards we have made in the past.  Drop by the table to get one along with a candy-filled goodie bag!
+      </div>
+      <div class="links">
+        <a href="https://www.facebook.com/innovativedesignucb">
+          <span class="fa-stack fa-2x" id="facebook">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x"></i>
+          </span>
+        </a>
+        <a href="https://twitter.com/innodatcal">
+          <span class="fa-stack fa-2x" id="twitter">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+          </span>
+        </a>
+        <a href="https://www.instagram.com/innodatcal/">
+          <span class="fa-stack fa-2x" id="instagram">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x"></i>
+          </span>
+        </a>
+      </div>
+      <div class="grid-wrapper">
+        <img class="col" ng-repeat="card in cards track by $index" ng-src="{{ card }}">
+      </div>
+      <div class="credits">
+        Halloween cards by David Bui, David Xie, Jessica Kwon, Sey Kim, Khor Le Yi, Fauzi Ali, Sarah Liao and Barbara Yang.
+      </div>
+    </div>
+  </body>
+</html>

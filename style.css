@@ -1,0 +1,134 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+#content {
+	background: #212121;
+	color: #EBEBEB;
+	font-family: "Amatic SC", sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.page-container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 10% 20px 10% 20px;
+}
+
+.page-container .title {
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 3%;
+}
+
+.page-container .links {
+	text-align: center;
+	margin: 40px auto;
+}
+
+.page-container .links a {
+	text-decoration: none;
+}
+
+.page-container .links #twitter {
+	color: #212121;
+	-webkit-transition: color 250ms ease-in-out;
+	transition: color 250ms ease-in-out;
+}
+
+.page-container .links #facebook {
+	color: #212121;
+	-webkit-transition: color 250ms ease-in-out;
+	transition: color 250ms ease-in-out;
+}
+
+.page-container .links #instagram {
+	color: #212121;
+	-webkit-transition: color 250ms ease-in-out;
+	transition: color 250ms ease-in-out;
+}
+
+.page-container .links:hover {
+	cursor: pointer;
+}
+
+.page-container .links .fa-circle {
+	color: #EBEBEB;
+}
+
+.page-container .links #twitter:hover {
+	color: #00ACED;
+}
+
+.page-container .links #facebook:hover {
+	color: #3B5998;
+}
+
+.page-container .links #instagram:hover {
+	color: #125688;
+}
+
+.page-container .about {
+	font-size: 2em;
+	margin: 20px auto;
+	line-height: 48px;
+  letter-spacing: 2px;
+}
+
+.page-container .about a:link, a:visited {
+	text-decoration: none;
+	color: #BDCDBD;
+	-webkit-transition: color 250ms linear;
+	transition: color 250ms linear;
+}
+
+.page-container .about a:hover {
+	color: #ADADAD;
+}
+
+.page-container .grid-wrapper {
+	line-height: 0;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 2%;
+	-moz-column-count: 3;
+	-moz-column-gap: 2%;
+	column-count: 3;
+	column-gap: 2%;
+	margin: 20px auto;
+}
+
+.page-container .grid-wrapper img.col {
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom: 2.12vh;
+}
+
+.page-container .credits {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+@media (max-width: 880px) {
+	.page-container .grid-wrapper {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media (max-width: 640px) {
+	.page-container .grid-wrapper {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
