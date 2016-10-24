@@ -2,6 +2,7 @@ var app = angular.module('halloween', [])
 	.controller('MainCtrl', ['$scope', function ($scope) {
 
 		$scope.cards = [
+      './img/cards/twins.png',
 			'./img/cards/boo.png',
 			'./img/cards/bourgeois.png',
 			'./img/cards/brains.png',
