@@ -11,6 +11,8 @@ var app = angular.module('halloween', [])
 			'./img/cards/clown.png',
 			'./img/cards/creep.png',
 			'./img/cards/friends.png',
+			'./img/cards/clout.png',
+			'./img/cards/wieners.png',
 			'./img/cards/meme.jpg',
 		];
 
